@@ -1,0 +1,15 @@
+<head>
+  <title>autoform-pickadate-example</title>
+</head>
+
+<body>
+  {{> newPost}}
+</body>
+
+<template name="newPost">
+
+  {{#autoForm collection="Posts" id="insertPostForm" type="insert"}}
+    {{> afQuickField name='happenedAt'}}
+  {{/autoForm}}
+
+</template>
